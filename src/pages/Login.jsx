@@ -24,8 +24,18 @@ const Login = () => {
 
   const avatar = useFileHandler("single")
 
+  const handleLogin = (e) => {
+    e.preventDefault();
+  }
+  const handleSignUp = (e) => {
+    e.preventDefault();
+  }
+
   return (
-    <Container
+    <div style={{
+      backgroundImage: "linear-gradient(rgb(255 225 209),rgb(249 159 159))",
+    }}>
+      <Container
       component={"main"}
       maxWidth="xs"
       sx={{
@@ -46,7 +56,7 @@ const Login = () => {
       >
         {isLogin ? (
           <>
-            <Typography>Login</Typography>
+            <Typography variant="h5">Login</Typography>
             <form
               style={{
                 width: "100%",
@@ -80,6 +90,7 @@ const Login = () => {
                 color="primary"
                 type="submit"
                 fullWidth
+                onSubmit={handleLogin}
               >
                 Login
               </Button>
@@ -93,7 +104,7 @@ const Login = () => {
           </>
         ) : (
           <>
-            <Typography>Register</Typography>
+            <Typography variant="h5">Register</Typography>
             <form
               style={{
                 width: "100%",
@@ -134,6 +145,11 @@ const Login = () => {
                   
                 </IconButton>
               </Stack>
+              {
+                  avatar.error && (
+                    <Typography color="error" m={"1rem auto"} width={"fit-content"} display={"block"} variant="caption">{avatar.error}</Typography>
+                  )
+                }
               <TextField
                 required
                 fullWidth
@@ -189,6 +205,7 @@ const Login = () => {
                 color="primary"
                 type="submit"
                 fullWidth
+                onSubmit={handleSignUp}
               >
                 Sign Up
               </Button>
@@ -203,6 +220,7 @@ const Login = () => {
         )}
       </Paper>
     </Container>
+    </div>
   );
 };
 
