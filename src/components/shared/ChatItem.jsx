@@ -7,7 +7,7 @@ const ChatItem = ({
     name,
     _id,
     groupChat=[],
-    sameSender=false,
+    sameSender,
     isOnline,
     newMessageAlert,
     index=0,
