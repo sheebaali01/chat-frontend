@@ -25,4 +25,21 @@ export const sampleUsers=[{
     name:"John Boi",
     _id:"2",
 }
+];
+
+
+export const sampleNotifications=[{
+    sender:{
+        avatar:["https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"],
+        name:"John Doe",
+    },
+    _id:"1",
+},
+{
+    sender:{
+        avatar:["https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"],
+        name:"John Boi",
+    },
+    _id:"2",
+}
 ]

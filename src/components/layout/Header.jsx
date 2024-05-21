@@ -25,7 +25,7 @@ const Header = () => {
         setIsNewGroup((prev)=>!prev);
     }
     const openNotification = ()=>{
-        setNotification((prev)=>!prev);
+        setIsNotification((prev)=>!prev);
     }
     const navigateToGroup = ()=> navigate("/groups");
     const logoutHandler = () =>{
