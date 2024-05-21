@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route element={<ProtectRoute user={user}/>}>
             <Route path="/" element={<Home/>}/>
-            <Route path="/chat/:id" element={<Chat/>}/>
+            <Route path="/chat/:chatId" element={<Chat/>}/>
             <Route path="/groups" element={<Groups/>}/>
           </Route>
           <Route path="/login" element={<ProtectRoute user={!user} redirect="/"><Login/></ProtectRoute>}/>
