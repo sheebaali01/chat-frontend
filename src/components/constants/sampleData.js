@@ -45,5 +45,17 @@ export const sampleNotifications=[{
 ]
 
 export const sampleMessages=[{
-    
+    attahments:[{
+        public_id:"jhhj",
+        url:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+    }],
+    content:"hiii",
+    _id:"jhjhj",
+    sender:{
+        _id:"hghg",
+        name:"John Doe",
+    },
+    chat:"chatId",
+    createdAt:"2021-11-17T15:30:00.000Z"
+
 }]
