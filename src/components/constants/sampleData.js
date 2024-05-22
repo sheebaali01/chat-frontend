@@ -43,3 +43,7 @@ export const sampleNotifications=[{
     _id:"2",
 }
 ]
+
+export const sampleMessages=[{
+    
+}]

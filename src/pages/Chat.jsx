@@ -11,7 +11,7 @@ import FileMenu from "../components/dialogs/FileMenu";
 
 const Chat = () => {
   const containerRef = useRef(null);
-  const fileMenuRef = useRef(null);
+
   return (
     <>
       <Stack
@@ -39,7 +39,6 @@ const Chat = () => {
             left:"1.5rem",
             rotate:"30deg"
           }}
-          ref={fileMenuRef}
           >
             <AttachFileIcon />
           </IconButton>
@@ -63,7 +62,7 @@ const Chat = () => {
           </IconButton>
         </Stack>
       </form>
-      <FileMenu anchorE1={fileMenuRef.current}/>
+      <FileMenu />
     </>
   );
 };
