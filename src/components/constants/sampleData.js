@@ -45,17 +45,34 @@ export const sampleNotifications=[{
 ]
 
 export const sampleMessages=[{
-    attahments:[{
+    attachments:[{
         public_id:"jhhj",
         url:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
     }],
     content:"hiii",
     _id:"jhjhj",
     sender:{
-        _id:"hghg",
+        _id:"user.id",
         name:"John Doe",
     },
     chat:"chatId",
     createdAt:"2021-11-17T15:30:00.000Z"
 
-}]
+},
+{
+    attachments:[{
+        public_id:"jhhj2",
+        url:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+    }],
+    content:"hiii",
+    _id:"jhjhj2",
+    sender:{
+        _id:"hghgh",
+        name:"John Doe",
+    },
+    chat:"chatId",
+    createdAt:"2021-11-17T15:30:00.000Z"
+
+},
+
+]
