@@ -31,7 +31,7 @@ const ConfirmDeleteDialog = lazy(() =>
 const AddMemberDialog = lazy(() =>
   import("../components/dialogs/AddMemberDialog"));
 
-const isAddMember = false;
+const isAddMember = true;
 const Groups = () => {
   const chatId = useSearchParams()[0].get("group");
   const navigate = useNavigate();
