@@ -1,7 +1,7 @@
 import { Close as CloseIcon, Dashboard as DashboardIcon, ExitToApp as ExitToAppIcon, Groups as GroupsIcon, ManageAccounts as ManageAccountsIcon, Menu as MenuIcon, Message as MessageIcon } from '@mui/icons-material'
 import { Box, Drawer, Grid, IconButton, Stack, Typography, styled } from '@mui/material'
 import React, { useState } from 'react'
-import { Link as LinkComponent, useLocation } from 'react-router-dom'
+import { Link as LinkComponent, Navigate, useLocation } from 'react-router-dom'
 import { grayColor, matBlack } from '../constants/color'
 // import { adminTabs } from '../constants/route'
 
@@ -81,11 +81,13 @@ const Sidebar = ({ w = "100%" }) => {
     )
 
 }
+const isAdmin = true;
 const AdminLayout = ({ children }) => {
 
     const [isMobile, setIsMobile] = useState(false);
     const handleMobile = () => setIsMobile((prev) => !prev);
     const handleClose = () => setIsMobile(false);
+    if(!isAdmin) <Navigate to={'/admin'} />
     return (
         <Grid container minHeight={"100vh"}>
             <Box sx={{
