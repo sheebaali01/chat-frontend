@@ -91,9 +91,9 @@ export const dashboardData = {
     chats:[
         {
             name:"Group Name",
-            avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+            avatar:["https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"],
             _id:"1",
-            groupCHat:false, 
+            groupChat:false, 
             members:["1","2"],
             totalMembers:2,
             totalMessages:20,
