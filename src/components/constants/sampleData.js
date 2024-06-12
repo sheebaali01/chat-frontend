@@ -75,4 +75,33 @@ export const sampleMessages=[{
 
 },
 
-]
+];
+
+export const dashboardData = {
+    users:[
+        {
+            name:"John Doe",
+            avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+            _id:"1", 
+            username:"johndoe",
+            friends:20,
+            groups:5        
+        }
+    ],
+    chats:[
+        {
+            name:"Group Name",
+            avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+            _id:"1",
+            groupCHat:false, 
+            members:["1","2"],
+            totalMembers:2,
+            totalMessages:20,
+            creator:{
+                name:"John Doe",
+                avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+            }
+
+        }
+    ]
+}
