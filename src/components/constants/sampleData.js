@@ -94,7 +94,7 @@ export const dashboardData = {
             avatar:["https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"],
             _id:"1",
             groupChat:false, 
-            members:["1","2"],
+            members:[{_id:"1",avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"},{_id:"2",avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"}],
             totalMembers:2,
             totalMessages:20,
             creator:{
@@ -102,6 +102,20 @@ export const dashboardData = {
                 avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
             }
 
+        }
+    ],
+    messages:[
+        {
+            attachments:[{public_id:"jhhj",url:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg"}],
+            content:"hiii",
+            _id:"jhjhj",
+            sender:{
+                avatar:"https://i.pngimg.me/thumb/f/720/m2H7K9A0Z5m2G6b1.jpg",
+                name:"John Doe",
+            },
+            chat:"chatId",
+            groupChat:"false",
+            createdAt:"2021-11-17T15:30:00.000Z"
         }
     ]
 }

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import AdminLayout from "../../components/layout/AdminLayout";
-import Table from "../../components/shared/Table";
 import { Avatar, Stack } from "@mui/material";
-import { transformImage } from "../../lib/features";
+import React, { useEffect, useState } from "react";
 import { dashboardData } from "../../components/constants/sampleData";
+import AdminLayout from "../../components/layout/AdminLayout";
 import AvatarCard from "../../components/shared/AvatarCard";
+import Table from "../../components/shared/Table";
+import { transformImage } from "../../lib/features";
 
 const columns = [
   {
@@ -66,6 +66,11 @@ const ChatManagement = () => {
   useEffect(() => {
     setRows(dashboardData.chats.map((i) => ({ ...i, id: i._id,
     avatar:i.avatar.map((i)=>transformImage(i,50)),
+    members:i.members.map((i)=>transformImage(i.avatar,50)),
+    creator:{
+      name:i.creator.name,
+      avatar:transformImage(i.creator.avatar,50)
+    }
     })));
 
   },[]);
